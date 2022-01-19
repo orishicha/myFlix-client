@@ -1,334 +1,45 @@
-:root {
-  --background-color: #ECF0F1;
-  --input-color: #F9F871;
-  --text-color: #4E8397;
-  --primary-color: #52b788;
-  --link-color: #845EC2;
-  --visited-link-color: #D65DB1;
-  --active-link-color: #FF6F91;
-  --button-color: #FF9671;
-  --header-color: #006d77;
-  --main-font-size: 14px;
-  --padding: 3rem;
-  --margin: 5rem;
-}
-
 * {
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  background-color: #353535;
+  color: #ffffff;
 }
-
-html {
-  font-size: var(--main-font-size);
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  background-color: #353535;
+  color: #ffffff;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  background-color: #353535;
+  color: #ffffff;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 1.2rem;
-  line-height: 300%;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  padding: var(--padding);
-  margin: var(--margin);
+  padding: inherit;
 }
 
-h1 {
-  font-size: 5rem;
-  font-weight: 700;
-  color: var(--header-color);
-  text-align: center;
+.form-control {
+  background-color: #d9d9d9;
 }
-
-h2 {
-  font-size: 4rem;
-  font-weight: 700;
-  color: var(--text-color);
-  text-align: center;
-}
-
-p {
-  font-size: var(--main-font-size);
-  font-weight: 300;
-  color: var(--primary-color);
-  overflow-wrap: break-word;
-}
-
-/* this is the button */
-button {
-  position: center;
-  border: none;
-  width: 100px;
-  background: #dfdfdf;
-  color: #D65DB1;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  cursor: pointer;
-}
-:root {
-  --background-color: #ECF0F1;
-  --input-color: #F9F871;
-  --text-color: #4E8397;
-  --primary-color: #52b788;
-  --link-color: #845EC2;
-  --visited-link-color: #D65DB1;
-  --active-link-color: #FF6F91;
-  --button-color: #FF9671;
-  --header-color: #006d77;
-  --main-font-size: 14px;
-  --padding: 3rem;
-  --margin: 5rem;
-}
-
 * {
   box-sizing: border-box;
-}
-
-html {
-  font-size: var(--main-font-size);
-}
-
-body {
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 1.2rem;
-  line-height: 300%;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  padding: var(--padding);
-  margin: var(--margin);
+  background-color: #353535;
+  color: #ffffff;
 }
-
-h1 {
-  font-size: 5rem;
-  font-weight: 700;
-  color: var(--header-color);
-  text-align: center;
-}
-
-h2 {
-  font-size: 4rem;
-  font-weight: 700;
-  color: var(--text-color);
-  text-align: center;
-}
-
-p {
-  font-size: var(--main-font-size);
-  font-weight: 300;
-  color: var(--primary-color);
-  overflow-wrap: break-word;
-}
-
-/* this is the button */
-button {
-  position: center;
-  border: none;
-  width: 100px;
-  background: #dfdfdf;
-  color: #D65DB1;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  cursor: pointer;
-}
-:root {
-  --background-color: #ECF0F1;
-  --input-color: #F9F871;
-  --text-color: #4E8397;
-  --primary-color: #52b788;
-  --link-color: #845EC2;
-  --visited-link-color: #D65DB1;
-  --active-link-color: #FF6F91;
-  --button-color: #FF9671;
-  --header-color: #006d77;
-  --main-font-size: 14px;
-  --padding: 3rem;
-  --margin: 5rem;
-}
-
 * {
   box-sizing: border-box;
-}
-
-html {
-  font-size: var(--main-font-size);
-}
-
-body {
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 1.2rem;
-  line-height: 300%;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  padding: var(--padding);
-  margin: var(--margin);
+  background-color: #353535;
+  color: #ffffff;
 }
-
-h1 {
-  font-size: 5rem;
-  font-weight: 700;
-  color: var(--header-color);
-  text-align: center;
-}
-
-h2 {
-  font-size: 4rem;
-  font-weight: 700;
-  color: var(--text-color);
-  text-align: center;
-}
-
-p {
-  font-size: var(--main-font-size);
-  font-weight: 300;
-  color: var(--primary-color);
-  overflow-wrap: break-word;
-}
-
-/* this is the button */
-button {
-  position: center;
-  border: none;
-  width: 100px;
-  background: #dfdfdf;
-  color: #D65DB1;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  cursor: pointer;
-}
-:root {
-  --background-color: #ECF0F1;
-  --input-color: #F9F871;
-  --text-color: #4E8397;
-  --primary-color: #52b788;
-  --link-color: #845EC2;
-  --visited-link-color: #D65DB1;
-  --active-link-color: #FF6F91;
-  --button-color: #FF9671;
-  --header-color: #006d77;
-  --main-font-size: 14px;
-  --padding: 3rem;
-  --margin: 5rem;
-}
-
 * {
   box-sizing: border-box;
-}
-
-html {
-  font-size: var(--main-font-size);
-}
-
-body {
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 1.2rem;
-  line-height: 300%;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  padding: var(--padding);
-  margin: var(--margin);
-}
-
-h1 {
-  font-size: 5rem;
-  font-weight: 700;
-  color: var(--header-color);
-  text-align: center;
-}
-
-h2 {
-  font-size: 4rem;
-  font-weight: 700;
-  color: var(--text-color);
-  text-align: center;
-}
-
-p {
-  font-size: var(--main-font-size);
-  font-weight: 300;
-  color: var(--primary-color);
-  overflow-wrap: break-word;
-}
-
-/* this is the button */
-button {
-  position: center;
-  border: none;
-  width: 100px;
-  background: #dfdfdf;
-  color: #D65DB1;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  cursor: pointer;
-}
-:root {
-  --background-color: #ECF0F1;
-  --input-color: #F9F871;
-  --text-color: #4E8397;
-  --primary-color: #52b788;
-  --link-color: #845EC2;
-  --visited-link-color: #D65DB1;
-  --active-link-color: #FF6F91;
-  --button-color: #FF9671;
-  --header-color: #006d77;
-  --main-font-size: 14px;
-  --padding: 3rem;
-  --margin: 5rem;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: var(--main-font-size);
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 1.2rem;
-  line-height: 300%;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  padding: var(--padding);
-  margin: var(--margin);
-}
-
-h1 {
-  font-size: 5rem;
-  font-weight: 700;
-  color: var(--header-color);
-  text-align: center;
-}
-
-h2 {
-  font-size: 4rem;
-  font-weight: 700;
-  color: var(--text-color);
-  text-align: center;
-}
-
-p {
-  font-size: var(--main-font-size);
-  font-weight: 300;
-  color: var(--primary-color);
-  overflow-wrap: break-word;
-}
-
-/* this is the button */
-button {
-  position: center;
-  border: none;
-  width: 100px;
-  background: #dfdfdf;
-  color: #D65DB1;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  cursor: pointer;
-}
-.my-flix {
-  color: steelblue;
+  background-color: #353535;
+  color: #ffffff;
 }
 /*# sourceMappingURL=index.49898aa3.css.map */
