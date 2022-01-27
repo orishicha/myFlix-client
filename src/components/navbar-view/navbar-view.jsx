@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import './navbar-view.scss';
 
-export function Menubar() {
+export function NavbarView({user}) {
     const onLoggedOut = () => {
         localStorage.clear();
         window.open('/', '_self');
@@ -24,7 +24,7 @@ export function Menubar() {
     return (
         <Navbar className="main-nav" sticky="top" bg="dark" expand="lg" variant="dark">
             <Container fluid>
-                <Navbar.Brand className="navbar-logo" href="/">myFlixCinema</Navbar.Brand>
+                <Navbar.Brand className="navbar-logo" href="/">Orishflix</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ml-auto">
@@ -33,7 +33,7 @@ export function Menubar() {
                         )}
                         {isAuth() && (
                             <Button variant="link" onClick={() => {
-                                this.onLoggedOut()
+                                onLoggedOut()
                             }}>Logout</Button>
                         )}
                         {!isAuth() && (
