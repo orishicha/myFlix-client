@@ -13,9 +13,7 @@ import './index.scss';
 class MyFlixApplication extends React.Component {
     render() {
         return (
-            <Container>
-                <MainView />
-            </Container>
+            <MainView />
         );
     }
 }
@@ -24,4 +22,4 @@ class MyFlixApplication extends React.Component {
 const container = document.getElementsByClassName('app-container')[0];
 
 // Tell React to render myFlix app in the root DOM element
-ReactDOM.render(React.createElement(MyFlixApplication), container);
+ReactDOM.render(<MyFlixApplication />, container);
