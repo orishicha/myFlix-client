@@ -22,14 +22,14 @@ export function NavbarView({user}) {
     };
 
     return (
-        <Navbar className="main-nav" sticky="top" bg="dark" expand="lg" variant="dark">
+        <Navbar className="main-nav" sticky="top" expand="lg" variant="dark">
             <Container fluid>
                 <Navbar.Brand className="navbar-logo" href="/">Orishflix</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ml-auto">
                         {isAuth() && (
-                            <Nav.Link href={`/users/${user}`}>{user}</Nav.Link>
+                            <Nav.Link href="/profile">{user}</Nav.Link>
                         )}
                         {isAuth() && (
                             <Button variant="link" onClick={() => {
@@ -37,10 +37,10 @@ export function NavbarView({user}) {
                             }}>Logout</Button>
                         )}
                         {!isAuth() && (
-                            <Nav.Link href="/">Sign-in</Nav.Link>
+                            <Nav.Link href="/">Login</Nav.Link>
                         )}
                         {!isAuth() && (
-                            <Nav.Link href="/register">Sign-up</Nav.Link>
+                            <Nav.Link href="/register">Register</Nav.Link>
                         )}
                     </Nav>
                 </Navbar.Collapse>
