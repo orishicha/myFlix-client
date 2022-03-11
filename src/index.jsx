@@ -2,18 +2,28 @@ import React from 'react';
 import axios from 'axios';
 import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
-import { MainView } from './components/main-view/main-view';
+import MainView from './components/main-view/main-view';
 import Container from 'react-bootstrap/Container';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import moviesApp from './reducers/reducers';
+import { devToolsEnhancer } from 'redux-devtools-extension';
 
 
 // Import statement to indicate that you need to bundle `./index.scss`
 import './index.scss';
 
+const store = createStore(moviesApp, devToolsEnhancer());
+
 // Main component (will eventually use all the others)
 class MyFlixApplication extends React.Component {
     render() {
-        return (
-            <MainView />
+        return(
+            <Provider store={store}>
+                <Container>
+                    <MainView />
+                </Container>
+            </Provider>
         );
     }
 }
@@ -22,4 +32,4 @@ class MyFlixApplication extends React.Component {
 const container = document.getElementsByClassName('app-container')[0];
 
 // Tell React to render myFlix app in the root DOM element
-ReactDOM.render(<MyFlixApplication />, container);
+ReactDOM.render(React.createElement(MyFlixApplication), container);
